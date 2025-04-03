@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruise118 Booking Confirmation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img src="https://via.placeholder.com/200x60?text=Cruise118.com" alt="Cruise118 Logo" class="logo">
+            <h1>Your Cruise Booking Confirmation</h1>
+        </div>
+
+        <div class="content-section">
+            <div class="booking-ref">
+                <p>Your Cruise118 booking reference: <strong>WOR</strong></p>
+            </div>
+            <p>Thank you for choosing Cruise118 to book your cruise holiday. We're delighted to confirm your booking details below. Please review all the information carefully and keep this email for your reference.</p>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Cruise Summary</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Cruise Line</h3>
+                    <p>Celebrity Cruises</p>
+                </div>
+                <div class="info-item">
+                    <h3>Ship</h3>
+                    <p>Celebrity Millennium</p>
+                </div>
+                <div class="info-item">
+                    <h3>Duration</h3>
+                    <p>20 days</p>
+                </div>
+                <div class="info-item">
+                    <h3>Departure Date</h3>
+                    <p>28/02/2026</p>
+                </div>
+                <div class="info-item">
+                    <h3>Departure Port</h3>
+                    <p>Singapore</p>
+                </div>
+                <div class="info-item">
+                    <h3>Return Port</h3>
+                    <p>Tokyo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Passenger Information</h2>
+            <div class="passenger-info">
+                <div class="passenger-card">
+                    <h3>Passenger 1</h3>
+                    <p><strong>Name:</strong> Mrs. Doe</p>
+                    <p><strong>Cabin Type:</strong> Inside</p>
+                    <p><strong>Cabin Grade:</strong> 11</p>
+                    <p><strong>Bed Configuration:</strong> Double</p>
+                </div>
+                <div class="passenger-card">
+                    <h3>Passenger 2</h3>
+                    <p><strong>Name:</strong> Mr. Doe</p>
+                    <p><strong>Cabin Type:</strong> Inside</p>
+                    <p><strong>Cabin Grade:</strong> 11</p>
+                    <p><strong>Bed Configuration:</strong> Double</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Your Cruise Itinerary</h2>
+            <div class="tab-container">
+                <div class="tab-buttons">
+                    <button class="tab-button active" onclick="openTab(event, 'full-itinerary')">Full Itinerary</button>
+                    <button class="tab-button" onclick="openTab(event, 'ports')">Ports of Call</button>
+                    <button class="tab-button" onclick="openTab(event, 'sea-days')">Sea Days</button>
+                </div>
+                
+                <div id="full-itinerary" class="tab-content active">
+                    <table class="itinerary">
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Location</th>
+                        </tr>
+                        <tr>
+                            <td>03/03/2026</td>
+                            <td>18:00</td>
+                            <td>Singapore (Departure)</td>
+                        </tr>
+                        <tr>
+                            <td>04/03/2026</td>
+                            <td>-</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>05/03/2026</td>
+                            <td>07:00 - 20:00</td>
+                            <td>Ho Chi Minh</td>
+                        </tr>
+                        <tr>
+                            <td>06/03/2026</td>
+                            <td>-</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>07/03/2026</td>
+                            <td>-</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>08/03/2026</td>
+                            <td>08:00 -</td>
+                            <td>Hong Kong</td>
+                        </tr>
+                        <tr>
+                            <td>09/03/2026</td>
+                            <td>- 18:00</td>
+                            <td>Hong Kong</td>
+                        </tr>
+                        <tr>
+                            <td>10/03/2026</td>
+                            <td>-</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>11/03/2026</td>
+                            <td>07:00 - 17:00</td>
+                            <td>Taipei</td>
+                        </tr>
+                        <tr>
+                            <td>12/03/2026</td>
+                            <td>-</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>13/03/2026</td>
+                            <td>07:00 - 18:00</td>
+                            <td>Nagasaki</td>
+                        </tr>
+                        <tr>
+                            <td>14/03/2026</td>
+                            <td>07:00 - 17:00</td>
+                            <td>Kagoshima</td>
+                        </tr>
+                        <tr>
+                            <td>15/03/2026</td>
+                            <td>-</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>16/03/2026</td>
+                            <td>06:30</td>
+                            <td>Tokyo (Arrival)</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="ports" class="tab-content">
+                    <table class="itinerary">
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Port</th>
+                        </tr>
+                        <tr>
+                            <td>05/03/2026</td>
+                            <td>07:00 - 20:00</td>
+                            <td>Ho Chi Minh</td>
+                        </tr>
+                        <tr>
+                            <td>08/03/2026</td>
+                            <td>08:00 -</td>
+                            <td>Hong Kong</td>
+                        </tr>
+                        <tr>
+                            <td>09/03/2026</td>
+                            <td>- 18:00</td>
+                            <td>Hong Kong</td>
+                        </tr>
+                        <tr>
+                            <td>11/03/2026</td>
+                            <td>07:00 - 17:00</td>
+                            <td>Taipei</td>
+                        </tr>
+                        <tr>
+                            <td>13/03/2026</td>
+                            <td>07:00 - 18:00</td>
+                            <td>Nagasaki</td>
+                        </tr>
+                        <tr>
+                            <td>14/03/2026</td>
+                            <td>07:00 - 17:00</td>
+                            <td>Kagoshima</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="sea-days" class="tab-content">
+                    <table class="itinerary">
+                        <tr>
+                            <th>Date</th>
+                            <th>Activity</th>
+                        </tr>
+                        <tr>
+                            <td>04/03/2026</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>06/03/2026</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>07/03/2026</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>10/03/2026</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>12/03/2026</td>
+                            <td>At Sea</td>
+                        </tr>
+                        <tr>
+                            <td>15/03/2026</td>
+                            <td>At Sea</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Dining & Extras</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Dining</h3>
+                    <p><strong>Sitting:</strong> CEL SLCT</p>
+                    <p><strong>Table Size:</strong> 4</p>
+                    <p><strong>Smoking:</strong> No</p>
+                </div>
+                <div class="info-item">
+                    <h3>Included Extras</h3>
+                    <p>Classic Drinks Package</p>
+                    <p>Wi-Fi for each passenger</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Flight Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Outbound Flight</h3>
+                    <p><strong>Airline:</strong> Qatar Airways</p>
+                    <p><strong>Flight Number:</strong> Q0004</p>
+                    <p><strong>Class:</strong> Economy</p>
+                    <p><strong>Departure:</strong> 28/02/2026 14:15 (LHR)</p>
+                    <p><strong>Arrival:</strong> 28/02/2026 23:55 (DOH)</p>
+                </div>
+                <div class="info-item">
+                    <h3>Return Flight</h3>
+                    <p><strong>Airline:</strong> Qatar Airways</p>
+                    <p><strong>Flight Number:</strong> Q0009</p>
+                    <p><strong>Class:</strong> Economy</p>
+                    <p><strong>Departure:</strong> 18/03/2026 16:55 (NRT)</p>
+                    <p><strong>Arrival:</strong> 18/03/2026 23:40 (DOH)</p>
+                </div>
+                <div class="info-item">
+                    <h3>Connecting Flight</h3>
+                    <p><strong>Airline:</strong> Qatar Airways</p>
+                    <p><strong>Flight Number:</strong> Q0001</p>
+                    <p><strong>Class:</strong> Economy</p>
+                    <p><strong>Departure:</strong> 19/03/2026 01:50 (DOH)</p>
+                    <p><strong>Arrival:</strong> 19/03/2026 06:25 (LHR)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Hotel Stays</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Singapore</h3>
+                    <p><strong>Hotel:</strong> Hotel Boss</p>
+                    <p><strong>Room Type:</strong> Double Superior</p>
+                    <p><strong>Check-in:</strong> 01/03/2026</p>
+                    <p><strong>Nights:</strong> 2</p>
+                    <p><strong>Board Basis:</strong> Room Only</p>
+                </div>
+                <div class="info-item">
+                    <h3>Tokyo</h3>
+                    <p><strong>Hotel:</strong> Hotel Metropolitan Edmont Tokyo</p>
+                    <p><strong>Room Type:</strong> Double Queen Bed Non Smoking</p>
+                    <p><strong>Check-in:</strong> 16/03/2026</p>
+                    <p><strong>Nights:</strong> 2</p>
+                    <p><strong>Board Basis:</strong> Room Only</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Transfers</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Airport to Hotel</h3>
+                    <p><strong>Date:</strong> 01/03/2026 14:55</p>
+                    <p><strong>From:</strong> Singapore International Airport (SIN)</p>
+                    <p><strong>To:</strong> Hotel Boss</p>
+                </div>
+                <div class="info-item">
+                    <h3>Hotel to Cruise Port</h3>
+                    <p><strong>Date:</strong> 03/03/2026 10:00</p>
+                    <p><strong>From:</strong> Hotel Boss, Singapore</p>
+                    <p><strong>To:</strong> Port of Marina Bay Cruise Centre, Singapore</p>
+                </div>
+                <div class="info-item">
+                    <h3>Cruise Port to Hotel</h3>
+                    <p><strong>Date:</strong> 16/03/2026 10:00</p>
+                    <p><strong>From:</strong> Yokohama Port (Osanbashi Terminal), Kanagawa</p>
+                    <p><strong>To:</strong> Hotel Metropolitan Edmont Tokyo, Tokyo</p>
+                </div>
+                <div class="info-item">
+                    <h3>Hotel to Airport</h3>
+                    <p><strong>Date:</strong> 18/03/2026 12:30</p>
+                    <p><strong>From:</strong> Hotel Metropolitan Edmont Tokyo, Tokyo</p>
+                    <p><strong>To:</strong> Tokyo Narita International Airport (NRT)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Payment Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Balance Due</h3>
+                    <p><strong>Amount:</strong> £[Balance Due]</p>
+                    <p><strong>Due Date:</strong> 22/12/2025</p>
+                </div>
+            </div>
+            <div class="button-container">
+                <a href="#" class="cta-button">Pay Balance Online</a>
+                <a href="#" class="cta-button">View Payment Options</a>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">Are You Travel Ready?</h2>
+            <div class="checklist">
+                <div class="checklist-item">
+                    <span class="checklist-icon">✓</span>
+                    <p>Have you checked that you have travel insurance? <a href="#">Check you have the right cover in place here</a>.</p>
+                </div>
+                <div class="checklist-item">
+                    <span class="checklist-icon">✓</span>
+                    <p>Ensure you meet the vaccination requirements for your destination(s) <a href="#">here</a>.</p>
+                </div>
+                <div class="checklist-item">
+                    <span class="checklist-icon">✓</span>
+                    <p>Do you need a visa for your destination country/countries? <a href="#">You can check here</a>.</p>
+                </div>
+                <div class="checklist-item">
+                    <span class="checklist-icon">✓</span>
+                    <p>Have you checked your passport is valid for travel? <a href="#">Click here to check your passport validity</a>.</p>
+                </div>
+                <div class="checklist-item">
+                    <span class="checklist-icon">✓</span>
+                    <p>Have you registered with your cruise line and downloaded your tickets for embarkation? <a href="#">Check here for further information</a>.</p>
+                </div>
+            </div>
+            <div class="button-container">
+                <a href="#" class="cta-button">Visit Our Support Hub</a>
+                <a href="#" class="cta-button">View Travel Checklist</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="#" class="footer-link">FAQs</a>
+                <a href="#" class="footer-link">Travel Advice</a>
+                <a href="#" class="footer-link">Contact Us</a>
+                <a href="#" class="footer-link">Manage Booking</a>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+            </div>
+            <div class="contact-info">
+                <p>Call us on: <strong>0808 250 0913</strong></p>
+                <p>Email: <strong>conciergodes@gmail.com</strong></p>
+            </div>
+            <p class="disclaimer">Cruise118.com is a trading name of WTH (UK) Ltd. All bookings are subject to terms and conditions. Your financial protection is provided by ATOL and ABTA.</p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
